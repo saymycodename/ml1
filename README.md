@@ -10,63 +10,6 @@ The system consists of three main components:
 2. **Machine Learning Model**: Random Forest regressor with engineered features
 3. **User Interfaces**: GUI application (`gui_app.py`) and command-line interface (`train_model.py`)
 
-## Technical Requirements
-
-### System Dependencies
-
-The system requires Python 3.7+ and the following packages:
-
-```
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-joblib>=1.1.0
-```
-
-### Platform-Specific Requirements
-
-**Linux (Arch-based distributions):**
-```bash
-# For GUI functionality
-sudo pacman -S tk
-
-# For machine learning packages (if not using pip)
-sudo pacman -S python-pandas python-numpy python-scikit-learn
-```
-
-**Other Linux distributions:**
-```bash
-# Ubuntu/Debian
-sudo apt-get install python3-tk
-
-# CentOS/RHEL
-sudo yum install tkinter
-```
-
-## Installation
-
-### Method 1: Using pip (Recommended)
-
-```bash
-# Clone or download the project
-cd sales-prediction-system
-
-# Install dependencies
-pip install -r requirements.txt --break-system-packages
-```
-
-Note: The `--break-system-packages` flag may be required on newer Linux distributions with externally managed Python environments.
-
-### Method 2: Using System Package Manager
-
-```bash
-# Arch Linux
-sudo pacman -S python-pandas python-numpy python-scikit-learn python-joblib tk
-
-# Ubuntu/Debian
-sudo apt-get install python3-pandas python3-numpy python3-sklearn python3-joblib python3-tk
-```
-
 ## Data Format and Requirements
 
 The system expects a CSV file named `artificial_sales.csv` with the following columns:
